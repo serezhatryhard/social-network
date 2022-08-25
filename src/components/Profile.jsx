@@ -1,10 +1,12 @@
 import React from 'react'
+import s from './Profile.module.css'
+
 
 const Profile = () => {
     return (
-        <main className='content'>
+        <main className={s.content}>
             Main content
-            <div><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEBx9Wr0-Vrvo7-X_EwAXnCxBrBODj3sjPLE_6DZPA&s' /></div>
+            <div className={s.content__image}><img src='https://www.industrialempathy.com/img/remote/ZiClJf-1920w.jpg' /></div>
             <div><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLJJ-BAkyVtBk2vKpkFf7yjELiyctbPFAMHUOjh6W_YQ&s' /></div>
         </main>
     )
