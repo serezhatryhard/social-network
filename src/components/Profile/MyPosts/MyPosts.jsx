@@ -1,14 +1,14 @@
 import React from 'react'
 import s from './MyPosts.module.css'
 import Post from './Post/Post'
-import { postsData } from '../../../index'
 
 
-const MyPosts = () => {
+
+const MyPosts = (props) => {
 
     
 
-    let postsElements = postsData
+    let postsElements = props.postsData
         .map(post => <Post message={post.message} likesAmount={post.likesCount} />)
 
     return (
