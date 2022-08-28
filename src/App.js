@@ -15,13 +15,11 @@ function App(props) {
   return (
       <div className="app-wrapper">
         <Header />
-        <Navbar />
+        <Navbar state = {props.state.navbarFriends}/>
         <div className='app-wrapper__content'>
           <Routes>
             <Route path='/dialogs' element={<Dialogs state = {props.state.dialogsPage} />} />
-            <Route path='/profile' element={<Profile state = {props.state.profilePage}/>} />
-            {/* <Route path='/dialogs' render={() => <Dialogs />} />
-            <Route path='/profile' render={() => <Profile />} /> */}
+            <Route path='/profile' element={<Profile state = {props.state.profilePage} addPost={props.addPost}/>} />
           </Routes>
         </div>
       </div>

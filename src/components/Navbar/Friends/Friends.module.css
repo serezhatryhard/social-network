@@ -1,0 +1,14 @@
+.friend{
+    display: flex;
+    gap: 10px;
+}
+
+.image img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.friend__name{
+
+}

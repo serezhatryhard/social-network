@@ -23,6 +23,21 @@ let state = {
             { id: 4, name: 'Viktor', imageSrc: 'https://cdn.imgbin.com/0/23/11/imgbin-discord-avatar-twitch-youtube-profile-black-and-brown-gorilla-illustration-xTvjfU0FPPCL5zpz4ZJEHtTMm.jpg' }
         ], 
     },
+    navbarFriends: [
+        { id: 1, name: 'Valera', imageSrc: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ2ZYWuLpIgzPyJ_0zEZoSOw244iMYJjQykQ&usqp=CAU' },
+        { id: 2, name: 'Andrew', imageSrc: 'https://w7.pngwing.com/pngs/551/804/png-transparent-discord-logo-avatar-avatar-heroes-logo-discord.png' },
+        { id: 3, name: 'Sveta', imageSrc: 'https://papik.pro/en/uploads/posts/2022-06/1655712258_38-papik-pro-p-cool-profile-picture-avatars-39.jpg' }
+    ]
+}
+
+export let addPost = (postMessage) => {
+    debugger
+    let newPost = {
+        id: 5,
+        message: postMessage,
+        likesCount: 5,
+    }
+    state.profilePage.postsData.push(newPost)
 }
 
 export default state
