@@ -7,7 +7,7 @@ import { NavLink } from 'react-router-dom'
 const Navbar = (props) => {
     // debugger
     let friendsElements = props.state
-        .map(friend => <Friends name={friend.name} imageSrc={friend.imageSrc}/>)
+        .map(friend => <Friends name={friend.name} imageSrc={friend.imageSrc} key={friend.id}/>)
 
     return (
        <div className={s.nav__block}>
